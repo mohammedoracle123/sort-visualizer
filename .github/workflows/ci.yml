@@ -26,6 +26,12 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Cache Build Artifacts
+        uses: actions/cache@v3
+        with:
+          path: public/bundle.js # Adjust the path to your build artifact
+          key: ${{ runner.os }}-build-${{ hashFiles('src/app.js') }} # Adjust based on what files trigger a rebuild
+
       - name: Build
         run: NODE_OPTIONS=--openssl-legacy-provider npm run build
         working-directory: ./
