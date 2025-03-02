@@ -93,3 +93,5 @@ document.querySelector(".start").addEventListener("click", start);
 document.querySelector(".size-menu").addEventListener("change", RenderScreen);
 document.querySelector(".algo-menu").addEventListener("change", RenderScreen);
 window.onload = RenderScreen;
+// This is a single-line comment in JavaScript.
+let x = 10; // This is also a single-line comment.
