@@ -95,3 +95,4 @@ document.querySelector(".algo-menu").addEventListener("change", RenderScreen);
 window.onload = RenderScreen;
 // This is a single-line comment in JavaScript.
 let x = 10; // This is also a single-line comment.
+let xe = 10; // This is also a single-line comment.
